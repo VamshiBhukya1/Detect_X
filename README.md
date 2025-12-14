@@ -1,4 +1,37 @@
-Detect_X — AI Crime Suspect Identification PlatformDetect_X is a powerful full-stack forensic application featuring AI-driven sketch generation, intelligent case management, and seamless investigation workflows. Built with React (MERN Stack) and the FIBO Image API, Detect_X offers a modern approach to criminal identification by transforming eyewitness descriptions into realistic forensic sketches instantly.🌟 Key Features🎨 Core Sketching FeaturesAI-Powered Generation: Instantly transforms text descriptions into pencil-style forensic sketches using FIBO API.Conversational Refinement: Iteratively refine facial features through a natural language chat interface.Real-time Rendering: Fast processing ensures immediate visual feedback for investigators.High-Res Export: Download sketches in high-resolution formats for official police reports.🕵️‍♂️ Investigation ManagementDigital Case Logs: Create, organize, and archive specific criminal cases with unique Case IDs.History Tracking: Every sketch iteration is saved, allowing investigators to revert to previous versions.Metadata Storage: Automatically logs timestamp, location, and officer details with every case.Secure Access: Role-based access control ensuring only authorized personnel view sensitive case files.🧠 Smart Analysis & ContextConfidence Scoring: AI provides a percentage score indicating how well the sketch matches the provided description.Vague Description Alerts: Smart detection warns users if the input description is too generic (e.g., "Average male").Conflict Detection: Alerts the user if the description contains contradictions (e.g., "Blue eyes" vs "Dark eyes").Context Preservation: The AI remembers previous prompts within a session to ensure consistent refinements.🎨 User ExperienceModern Dashboard: Clean, command-center style interface designed for high-stress environments.Dark Mode Support: Optimized UI for low-light control room usage.Responsive Design: Works seamlessly on desktop workstations and field tablets.Keyboard Shortcuts: Quick navigation for rapid data entry during investigations.🏗️ ArchitecturePlaintext┌─────────────────────────────────────────────────────────────┐
+# Detect_X — AI Crime Suspect Identification Platform
+
+**Detect_X** is a powerful full-stack forensic application featuring AI-driven sketch generation, intelligent case management, and seamless investigation workflows. Built with React (MERN Stack) and the FIBO Image API, Detect_X offers a modern approach to criminal identification by transforming eyewitness descriptions into realistic forensic sketches instantly.
+
+## 🌟 Key Features
+
+### 🎨 Core Sketching Features
+* **AI-Powered Generation:** Instantly transforms text descriptions into pencil-style forensic sketches using FIBO API.
+* **Conversational Refinement:** Iteratively refine facial features through a natural language chat interface.
+* **Real-time Rendering:** Fast processing ensures immediate visual feedback for investigators.
+* **High-Res Export:** Download sketches in high-resolution formats for official police reports.
+
+### 🕵️‍♂️ Investigation Management
+* **Digital Case Logs:** Create, organize, and archive specific criminal cases with unique Case IDs.
+* **History Tracking:** Every sketch iteration is saved, allowing investigators to revert to previous versions.
+* **Metadata Storage:** Automatically logs timestamp, location, and officer details with every case.
+* **Secure Access:** Role-based access control ensuring only authorized personnel view sensitive case files.
+
+### 🧠 Smart Analysis & Context
+* **Confidence Scoring:** AI provides a percentage score indicating how well the sketch matches the provided description.
+* **Vague Description Alerts:** Smart detection warns users if the input description is too generic (e.g., "Average male").
+* **Conflict Detection:** Alerts the user if the description contains contradictions (e.g., "Blue eyes" vs "Dark eyes").
+* **Context Preservation:** The AI remembers previous prompts within a session to ensure consistent refinements.
+
+### 🎨 User Experience
+* **Modern Dashboard:** Clean, command-center style interface designed for high-stress environments.
+* **Dark Mode Support:** Optimized UI for low-light control room usage.
+* **Responsive Design:** Works seamlessly on desktop workstations and field tablets.
+* **Keyboard Shortcuts:** Quick navigation for rapid data entry during investigations.
+
+## 🏗️ Architecture
+
+```text
+┌─────────────────────────────────────────────────────────────┐
 │                          Detect_X                           │
 ├─────────────────┬─────────────────┬─────────────────────────┤
 │    Frontend     │     Backend     │    External Services    │
@@ -11,7 +44,54 @@ Detect_X — AI Crime Suspect Identification PlatformDetect_X is a powerful full
 │ • History View  │ • Image Process │                         │
 │ • User Settings │ • Logging       │                         │
 └─────────────────┴─────────────────┴─────────────────────────┘
-🚀 Getting StartedPrerequisitesBefore you begin, ensure you have the following installed:Node.js 18+ and npmMongoDB (local installation or MongoDB Atlas account)FIBO API Key (for image generation)Installation1. Clone the RepositoryBashgit clone https://github.com/yourusername/detect-x.git
+
+It looks like the formatting broke when the text was copied or rendered. Here is the Detect_X README restored to the strict, professional Markdown format you asked for (matching the BranChat style).Copy the code block below and paste it directly into your README.md file.Markdown# Detect_X — AI Crime Suspect Identification Platform
+
+**Detect_X** is a powerful full-stack forensic application featuring AI-driven sketch generation, intelligent case management, and seamless investigation workflows. Built with React (MERN Stack) and the FIBO Image API, Detect_X offers a modern approach to criminal identification by transforming eyewitness descriptions into realistic forensic sketches instantly.
+
+## 🌟 Key Features
+
+### 🎨 Core Sketching Features
+* **AI-Powered Generation:** Instantly transforms text descriptions into pencil-style forensic sketches using FIBO API.
+* **Conversational Refinement:** Iteratively refine facial features through a natural language chat interface.
+* **Real-time Rendering:** Fast processing ensures immediate visual feedback for investigators.
+* **High-Res Export:** Download sketches in high-resolution formats for official police reports.
+
+### 🕵️‍♂️ Investigation Management
+* **Digital Case Logs:** Create, organize, and archive specific criminal cases with unique Case IDs.
+* **History Tracking:** Every sketch iteration is saved, allowing investigators to revert to previous versions.
+* **Metadata Storage:** Automatically logs timestamp, location, and officer details with every case.
+* **Secure Access:** Role-based access control ensuring only authorized personnel view sensitive case files.
+
+### 🧠 Smart Analysis & Context
+* **Confidence Scoring:** AI provides a percentage score indicating how well the sketch matches the provided description.
+* **Vague Description Alerts:** Smart detection warns users if the input description is too generic (e.g., "Average male").
+* **Conflict Detection:** Alerts the user if the description contains contradictions (e.g., "Blue eyes" vs "Dark eyes").
+* **Context Preservation:** The AI remembers previous prompts within a session to ensure consistent refinements.
+
+### 🎨 User Experience
+* **Modern Dashboard:** Clean, command-center style interface designed for high-stress environments.
+* **Dark Mode Support:** Optimized UI for low-light control room usage.
+* **Responsive Design:** Works seamlessly on desktop workstations and field tablets.
+* **Keyboard Shortcuts:** Quick navigation for rapid data entry during investigations.
+
+## 🏗️ Architecture
+
+```text
+┌─────────────────────────────────────────────────────────────┐
+│                          Detect_X                           │
+├─────────────────┬─────────────────┬─────────────────────────┤
+│    Frontend     │     Backend     │    External Services    │
+│    (React +     │    (Node.js +   │                         │
+│   Tailwind)     │     Express)    │                         │
+├─────────────────┼─────────────────┼─────────────────────────┤
+│ • Sketch UI     │ • REST API      │ • MongoDB Atlas         │
+│ • Chat Console  │ • Auth System   │ • FIBO Image API        │
+│ • Case Dashboard│ • Case Logic    │ • AWS S3 (Optional)     │
+│ • History View  │ • Image Process │                         │
+│ • User Settings │ • Logging       │                         │
+└─────────────────┴─────────────────┴─────────────────────────┘
+🚀 Getting StartedPrerequisitesBefore you begin, ensure you have the following installed:Node.js 18+ and npmMongoDB (local installation or MongoDB Atlas account)FIBO API Key (for image generation)Installation1. Clone the RepositoryBashgit clone [https://github.com/yourusername/detect-x.git](https://github.com/yourusername/detect-x.git)
 cd detect-x
 2. Backend SetupBash# Navigate to backend directory
 cd server
@@ -60,4 +140,4 @@ npm start
 Frontend:Bashcd client
 npm run build
 npm run preview
-🐛 TroubleshootingCommon IssuesFIBO API Errors (401/429)Verify your API Key in .env.Check if you have exceeded your daily generation quota.MongoDB Connection FailedEnsure mongod service is running locally.Check if your IP is whitelisted in MongoDB Atlas.CORS ErrorVerify VITE_API_URL in the frontend matches the Backend port.Check cors configuration in server/index.js.Images Not LoadingEnsure the backend uploads folder exists if storing locally.Check console for broken URL paths.🤝 ContributingWe welcome contributions from the open-source community!Fork the repository.Create a feature branch: git checkout -b feature/amazing-featureCommit your changes: git commit -m 'Add amazing feature'Push to the branch: git push origin feature/amazing-featureOpen a Pull Request.📄 LicenseThis project is licensed under the MIT License - see the LICENSE file for details.📞 Support & ContactIssues: GitHub IssuesEmail: support@detectx-app.comDocumentation: /docs folder<br /><p align="center">Built with ❤️ for Public Safety</p>
+🐛 TroubleshootingCommon IssuesFIBO API Errors (401/429)Verify your API Key in .env.Check if you have exceeded your daily generation quota.MongoDB Connection FailedEnsure mongod service is running locally.Check if your IP is whitelisted in MongoDB Atlas.CORS ErrorVerify VITE_API_URL in the frontend matches the Backend port.Check cors configuration in server/index.js.Images Not LoadingEnsure the backend uploads folder exists if storing locally.Check console for broken URL paths.🤝 ContributingWe welcome contributions from the open-source community!Fork the repository.Create a feature branch: git checkout -b feature/amazing-featureCommit your changes: git commit -m 'Add amazing feature'Push to the branch: git push origin feature/amazing-featureOpen a Pull Request.📄 LicenseThis project is licensed under the MIT License - see the LICENSE file for details.📞 Support & ContactIssues: GitHub IssuesEmail: support@detectx-app.comDocumentation: /docs folder.
